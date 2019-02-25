@@ -18,15 +18,13 @@ namespace Prog2
 
         // --- Méthodes ---
 
-        public static string Convertir(char noteEn)
-        {
-            if (NotesFr.Contains(n => n == noteEn))
-            {
-                return NotesFr[noteEn];
-            }
-            else
-                return null;
-        }
+        /// <summary>
+        /// Renvoie la note en français correspondant à la note anglaise.
+        /// </summary>
+        /// <param name="noteEn">la note anglaise</param>
+        /// <returns>la note en français si elle existe, null sinon</returns>
+        public static string Convertir(char noteEn) 
+            => (noteEn < 0 || NotesFr.Length < noteEn || NotesFr[noteEn] == null) ? null : NotesFr[noteEn];
 
         /// <summary>
         /// Constructeur statique. Appelé automatiquement au démarrage du programme.

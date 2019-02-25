@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Additionner", "Additionner\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertirNotes", "ConvertirNotes\ConvertirNotes.csproj", "{9C18DB12-803D-4C16-99FF-DA0FDD477530}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{B8CD22DD-9523-4E3A-AC26-95700ACDA474}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{E7B2B4F2-C24B-491C-809C-20A25861443C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{9C18DB12-803D-4C16-99FF-DA0FDD477530}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C18DB12-803D-4C16-99FF-DA0FDD477530}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C18DB12-803D-4C16-99FF-DA0FDD477530}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B8CD22DD-9523-4E3A-AC26-95700ACDA474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8CD22DD-9523-4E3A-AC26-95700ACDA474}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8CD22DD-9523-4E3A-AC26-95700ACDA474}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8CD22DD-9523-4E3A-AC26-95700ACDA474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7B2B4F2-C24B-491C-809C-20A25861443C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B2B4F2-C24B-491C-809C-20A25861443C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B2B4F2-C24B-491C-809C-20A25861443C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B2B4F2-C24B-491C-809C-20A25861443C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
