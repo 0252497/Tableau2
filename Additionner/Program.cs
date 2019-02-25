@@ -15,7 +15,7 @@ namespace Prog2
         {
             Title = "Additionner";
 
-            if (args.Length !=  2)
+            if (args.Length != 2)
             {
                 ColorWriteLine(DarkYellow, "USAGE : Additionner nombre1 nombre2");
                 return;
