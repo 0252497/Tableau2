@@ -19,7 +19,7 @@ namespace Prog2
         // --- Méthodes ---
 
         /// <summary>
-        /// Renvoie la note en français correspondant à la note anglaise.
+        /// Renvoie la note en français correspondante à la note anglaise.
         /// </summary>
         /// <param name="noteEn">la note anglaise</param>
         /// <returns>la note en français si elle existe, null sinon</returns>

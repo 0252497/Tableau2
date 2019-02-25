@@ -33,7 +33,14 @@ namespace Prog2
             {
                 char note = char.Parse(arg);
 
-                ColorWrite(Blue, "{0}\t", Convertisseur.Convertir(note));
+                if (Convertisseur.Convertir(note) != null)
+                {
+                    ColorWrite(Cyan, "{0}\t", Convertisseur.Convertir(note));
+                }
+                else
+                {
+                    ColorWrite(Cyan, "?\t");
+                }
             }
         }
     }
