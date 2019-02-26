@@ -1,8 +1,10 @@
-﻿using System;
+﻿/* Programme qui affiche une liste des nombres premiers plus petits ou égaux au maximum fourni.
+ * 
+ * Auteure : Véronique Giguère
+ * Création : 25 février 2019
+ */
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Prog2
 {
@@ -19,7 +21,7 @@ namespace Prog2
 
             for (int i = 2; i <= max; ++i)
             {
-                if (EstPremier(i) || i == 2)
+                if (EstPremier(i))
                 {
                     nombresPremiers.Add(i);
                 }
@@ -29,13 +31,14 @@ namespace Prog2
         }
 
         /// <summary>
-        /// Renvoie si un nombre est premier.
+        /// Renvoie si un nombre est premier. 
+        /// (Réf. : "Introduction à la programmation avec C#", Michel Michaud.)
         /// </summary>
         /// <param name="nombre">le nombre à vérifier</param>
-        /// <returns></returns>
+        /// <returns>vrai si le nombre est premier, false sinon</returns>
         public static bool EstPremier(int nombre)
         {
-            bool premier = nombre % 2 != 0;
+            bool premier = nombre % 2 != 0 || nombre == 2;
 
             for (int diviseur = 3; premier && diviseur <= nombre / diviseur; diviseur += 2)
             {

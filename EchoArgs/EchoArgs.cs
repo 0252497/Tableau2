@@ -1,11 +1,12 @@
-﻿using System;
+﻿/* Programme qui affiche la quantité d'arguments reçus et leur valeur.
+ * 
+ * Auteure : Véronique Giguère
+ * Création : 25 février 2019
+ */
+using System;
 using static System.Console;
 using static Prog2.ConsolePlus;
 using static System.ConsoleColor;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Prog2
 {

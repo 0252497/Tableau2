@@ -1,4 +1,9 @@
-﻿using System;
+﻿/* Programme qui permet d'additionner deux nombres.
+ * 
+ * Auteure : Véronique Giguère
+ * Création : 24 février 2019
+ */
+using System;
 using static System.Console;
 using static System.ConsoleColor;
 using static Prog2.ConsolePlus;

@@ -1,4 +1,9 @@
-﻿using System;
+﻿/* Programme qui convertit un caractère ou un mot en code morse.
+ * 
+ * Auteure : Véronique Giguère
+ * Création : 25 février 2019
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +11,6 @@ using System.Threading.Tasks;
 using static Prog2.ConsolePlus;
 using static System.Console;
 using static System.ConsoleColor;
-using static System.String;
 
 namespace Prog2
 {

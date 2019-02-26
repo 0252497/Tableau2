@@ -1,4 +1,9 @@
-﻿using System;
+﻿/* Programme qui convertit une note de musique anglaise vers sa note correspondante en français.
+ * 
+ * Auteure : Véronique Giguère
+ * Création : 25 février 2019
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

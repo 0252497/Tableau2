@@ -17,6 +17,8 @@ namespace Prog2
         /// </summary>
         static readonly string[] AlphabetMorse = new string[128];
 
+       // --- Méthodes ---
+        
         /// <summary>
         /// Encode un caractère ASCII en code morse international.
         /// </summary>
@@ -114,14 +116,13 @@ namespace Prog2
             AlphabetMorse['/'] = "-..-.";
             AlphabetMorse['('] = "-.--.";
             AlphabetMorse[')'] = "-.--.-";
-            AlphabetMorse['\u005C'] = "";
             AlphabetMorse['_'] = "..--.-";
             AlphabetMorse['"'] = ".-..-.";
             AlphabetMorse[';'] = "-.-.-.";
         }
 
         /// <summary>
-        /// Pour initialiser la table de conversion.
+        /// Constructeur statique. Appelé automatiquement au démarrage du programme.
         /// </summary>
         static Morse()
         {
