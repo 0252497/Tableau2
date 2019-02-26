@@ -20,27 +20,28 @@ namespace Prog2
         {
             Title = "Additionner";
 
-            if (args.Length != 2)
+            var total = 0.0;
+            var ligne = "";
+
+            for (int i = 0; i < args.Length; ++i)
             {
-                ColorWriteLine(DarkYellow, "USAGE : Additionner nombre1 nombre2");
-                return;
+                if (!double.TryParse(args[i], out double nombre))
+                {
+                    ConsolePlus.ColorWriteLine(ConsoleColor.Red, "Nombre invalide: {0}", args[i]);
+                    return;
+                }
+
+                if (i == 0)
+                {
+                    ligne += args[i];
+                }
+                else
+                {
+                    ligne += " + " + args[i];
+                }
+
+                total += nombre;
             }
-
-            if (!double.TryParse(args[0], out double nombre1))
-            {
-                ColorWriteLine(Red, "Nombre invalide : {0}", args[0]);
-                return;
-            }
-
-            if (!double.TryParse(args[1], out double nombre2))
-            {
-                ColorWriteLine(Red, "Nombre invalide : {0}", args[1]);
-                return;
-            }
-
-            var total = nombre1 + nombre2;
-
-            ColorWriteLine(Green, "{0} + {1} = {2}", nombre1, nombre2, total);
         }
     }
 }

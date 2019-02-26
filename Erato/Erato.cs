@@ -13,7 +13,14 @@ namespace Prog2
     {
         static void Main(string[] args)
         {
-            if (!int.TryParse(args[0], out int entier))
+            int entier;
+
+            if (args.Length == 0)
+            {
+                entier = 100;
+            }
+
+            else if (!int.TryParse(args[0], out entier))
             {
                 ColorWriteLine(Red, "{0} doit être un nombre entier", args[0]);
                 return;
@@ -34,6 +41,8 @@ namespace Prog2
                     ColorWrite(Magenta, "{0} ", nombresEntiers[i]);
                 }
             }
+
+            WriteLine("");
         }
     }
 }
