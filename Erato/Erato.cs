@@ -18,21 +18,14 @@ namespace Prog2
                 ColorWriteLine(Red, "{0} doit être un nombre entier", args[0]);
                 return;
             }
-            
+
             List<int> nombresEntiers = Crible.Ératosthène(entier);
-           
+
             ColorWriteLine(Cyan, "Nombres premiers <= {0}", entier);
 
-            for (int i = 0; i < nombresEntiers.Count; ++i)
+            foreach (int nombre in nombresEntiers)
             {
-                if (i % 2 == 0)
-                {
-                    ColorWrite(Yellow, "{0} ", nombresEntiers[i]);
-                }
-                else
-                {
-                    ColorWrite(Magenta, "{0} ", nombresEntiers[i]);
-                }
+                ColorWrite(Magenta, "{0} ", nombre);
             }
         }
     }
