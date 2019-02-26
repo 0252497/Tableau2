@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeMorse", "CodeMorse\CodeMorse.csproj", "{F4E112D7-6094-4EF0-950F-3AC462BBFD7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erato", "Erato\Erato.csproj", "{3FD12774-2068-4A83-AE74-1B1908A30611}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F4E112D7-6094-4EF0-950F-3AC462BBFD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4E112D7-6094-4EF0-950F-3AC462BBFD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4E112D7-6094-4EF0-950F-3AC462BBFD7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD12774-2068-4A83-AE74-1B1908A30611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD12774-2068-4A83-AE74-1B1908A30611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD12774-2068-4A83-AE74-1B1908A30611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD12774-2068-4A83-AE74-1B1908A30611}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

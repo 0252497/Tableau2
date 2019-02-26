@@ -21,7 +21,7 @@ namespace Prog2
         /// Encode un caractère ASCII en code morse international.
         /// </summary>
         /// <param name="c">le caractère ASCII à encoder</param>
-        /// <returns>le code morse associé ou null si le caractère </returns>
+        /// <returns>le code morse associé ou null si le caractère n'e</returns>
         public static string Encoder(char c)
             => (ToUpper(c) < 0 || AlphabetMorse.Length < ToUpper(c) || 
                 AlphabetMorse[ToUpper(c)] == null) ? null : AlphabetMorse[ToUpper(c)];
@@ -35,19 +35,19 @@ namespace Prog2
         /// <returns>le mot encodé en morse</returns>
         public static string Encoder(string mot, string erreur = "??", string séparateur = " ")
         {
-            char[] caractères = mot.SansAccents().ToCharArray();
+            char[] caractères = mot.SansAccents().ToUpper().ToCharArray();
 
             string motEnMorse = "";
 
             for (int i = 0; i < caractères.Length; ++i)
             {
-                if (Encoder(ToUpper(caractères[i])) == null)
+                if (Encoder(caractères[i]) == null)
                 {
                     motEnMorse += erreur;
                 }
                 else
                 {
-                    motEnMorse += AlphabetMorse[ToUpper(caractères[i])];
+                    motEnMorse += AlphabetMorse[caractères[i]];
                 }
 
                 if (caractères.Length > 1 && i < caractères.Length - 1)
