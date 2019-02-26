@@ -1,5 +1,4 @@
 ﻿using System;
-using static System.Char;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,8 +8,6 @@ namespace Prog2
 {
     public static class Convertisseur
     {
-        // --- Tables de conversion ---
-
         /// <summary>
         /// Table de conversion pour note anglais vers note français.
         /// </summary>

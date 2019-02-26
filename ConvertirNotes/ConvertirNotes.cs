@@ -35,11 +35,11 @@ namespace Prog2
 
                 if (Convertisseur.Convertir(note) != null)
                 {
-                    ColorWrite(Cyan, "{0}\t", Convertisseur.Convertir(note));
+                    ColorWrite(Magenta, "{0}\t", Convertisseur.Convertir(note));
                 }
                 else
                 {
-                    ColorWrite(Cyan, "?\t");
+                    ColorWrite(Magenta, "?\t");
                 }
             }
         }

@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{57B4A583-0A66-4C99-8589-1848AD96C6A0}</ProjectGuid>
+    <ProjectGuid>{F4E112D7-6094-4EF0-950F-3AC462BBFD7E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Additionner</RootNamespace>
-    <AssemblyName>Additionner</AssemblyName>
+    <RootNamespace>Prog2</RootNamespace>
+    <AssemblyName>CodeMorse</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Additionner.cs" />
+    <Compile Include="Morse.cs" />
+    <Compile Include="CodeMorse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

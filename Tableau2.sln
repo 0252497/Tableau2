@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertirNotes", "Convertir
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{E7B2B4F2-C24B-491C-809C-20A25861443C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeMorse", "CodeMorse\CodeMorse.csproj", "{F4E112D7-6094-4EF0-950F-3AC462BBFD7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E7B2B4F2-C24B-491C-809C-20A25861443C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7B2B4F2-C24B-491C-809C-20A25861443C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7B2B4F2-C24B-491C-809C-20A25861443C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E112D7-6094-4EF0-950F-3AC462BBFD7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E112D7-6094-4EF0-950F-3AC462BBFD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E112D7-6094-4EF0-950F-3AC462BBFD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E112D7-6094-4EF0-950F-3AC462BBFD7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
