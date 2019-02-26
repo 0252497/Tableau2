@@ -29,7 +29,7 @@ namespace Prog2
                 AlphabetMorse[ToUpper(c)] == null) ? null : AlphabetMorse[ToUpper(c)];
 
         /// <summary>
-        /// Encode un caractère ASCII en code morse international.
+        /// Encode un mot en code morse international.
         /// </summary>
         /// <param name="mot">le mot à encoder</param>
         /// <param name="erreur">les caractères non reconnus seront remplacés par ce code d'erreur</param>
@@ -128,6 +128,5 @@ namespace Prog2
         {
             InitialiserTableDeConversion();
         }
-
     }
 }
