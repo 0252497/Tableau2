@@ -17,38 +17,35 @@ namespace Prog2
         /// <returns>liste des nombres premiers plus petits ou égaux à max</returns>
         public static List<int> Ératosthène(int max = 100)
         {
-            List<int> nombresPremiers = new List<int>(); 
+            List<int> nombresPremiers = new List<int>();
+
+            int[] nombres = new int[max + 1];
+
+            int compte = 2; 
 
             for (int i = 2; i <= max; ++i)
             {
-                if (EstPremier(i))
+                nombres[i] = compte;
+                ++compte;
+            }
+
+            for (int i = 2; (i * i) <= max; ++i)
+            {
+                for (int j = i * i; j <= max; j = j + i)
                 {
-                    nombresPremiers.Add(i);
+                    nombres[j] = 0;
+                }
+            }
+
+            for (int i = 2; i <= max; ++i)
+            {
+                if (nombres[i] != 0)
+                {
+                    nombresPremiers.Add(nombres[i]);
                 }
             }
 
             return nombresPremiers;
-        }
-
-        /// <summary>
-        /// Renvoie si un nombre est premier. 
-        /// (Réf. : "Introduction à la programmation avec C#", Michel Michaud.)
-        /// </summary>
-        /// <param name="nombre">le nombre à vérifier</param>
-        /// <returns>vrai si le nombre est premier, false sinon</returns>
-        public static bool EstPremier(int nombre)
-        {
-            bool premier = nombre % 2 != 0 || nombre == 2;
-
-            for (int diviseur = 3; premier && diviseur <= nombre / diviseur; diviseur += 2)
-            {
-                if (nombre % diviseur == 0)
-                {
-                    premier = false;
-                }
-            }
-
-            return premier;
         }
     }
 }
