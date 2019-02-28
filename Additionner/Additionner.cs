@@ -27,7 +27,7 @@ namespace Prog2
             {
                 if (!double.TryParse(args[i], out double nombre))
                 {
-                    ConsolePlus.ColorWriteLine(ConsoleColor.Red, "Nombre invalide: {0}", args[i]);
+                    ColorWriteLine(Red, "Nombre invalide: {0}", args[i]);
                     return;
                 }
 
