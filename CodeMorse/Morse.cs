@@ -23,7 +23,7 @@ namespace Prog2
         /// Encode un caractère ASCII en code morse international.
         /// </summary>
         /// <param name="c">le caractère ASCII à encoder</param>
-        /// <returns>le code morse associé ou null si le caractère n'e</returns>
+        /// <returns>le code morse associé ou null si le caractère n'existe pas</returns>
         public static string Encoder(char c)
             => (c < 0 || AlphabetMorse.Length < c || AlphabetMorse[c] == null) ? null : AlphabetMorse[c];
 
